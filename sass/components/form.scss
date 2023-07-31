@@ -1,0 +1,91 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        margin-top: 20px;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+
+        &:first-of-type {
+            margin-bottom: 42px;
+        }
+    }
+
+    &__label {
+        font-weight: bold;
+        font-size: calc(11px/16px*1rem);
+        line-height: calc(15px/16px*1rem);
+        text-transform: uppercase;
+        color: $color-blue;
+        letter-spacing: calc(3.28px/16px*1rem);
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid $color-grey;
+        line-height: calc(42px/16px*1rem);
+    }
+
+    &__agreement {
+        margin-top: 30px;
+    }
+
+    &__checkbox {
+        background-color: transparent;
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: calc(12px/16px*1rem);
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked {
+                ~.checkbox {
+                    background-image: url(/assets/Checkmark.svg);
+                    background-position: center;
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        .checkbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: $color-white;
+            border: 1px solid $color-grey;
+            border-radius: 4px;
+        }
+
+        .agreement__text {
+            margin: 0 10px;
+            color: $color-grey;
+            line-height: calc(17px/16px*1rem);
+        }
+
+
+    }
+
+    .btn {
+        padding: 20px 97px;
+        align-self: flex-end;
+        margin-top: 20px;
+        font-size: calc(13px/16px*1rem);
+        border: none;
+    }
+
+}

@@ -1,0 +1,55 @@
+.opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+
+    &__content {
+        margin-top: 130px;
+        text-align: center;
+
+        @include mobile {
+            margin-top: 100px;
+        }
+
+    }
+
+    &__title {
+        font-size: 3.0625rem;
+        font-family: $font-raleway;
+        font-weight: 400;
+        line-height: calc(57px/16px) *1rem;
+    }
+
+    &__heading {
+        margin-top: calc(20px/16px*1rem);
+        margin-bottom: calc(40px/16px*1rem);
+        color: $color-black;
+        line-height: calc(22px/16px*1rem);
+
+        @include mobile {
+            padding: 0 70px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        padding: 22px 0;
+
+        @include mobile {
+            margin: 0 10px;
+            // wychodzi poza conatiner
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+
+        @include mobile {
+            width: 220%;
+            // jak się pozbyć scrolla?
+        }
+    }
+}

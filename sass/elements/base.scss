@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-white;
+    font-family: $font-open-sans;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-family: $font-raleway;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1352px;
+    margin: 0 auto;
+
+    @include notebook {
+    width: 100%;
+    padding: 15px;
+}
+}
+
+.logo {
+    font-family: $font-raleway;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $color-blue;
+}
+
+.btn {
+    font-family: $font-open-sans;
+    font-size: 1rem;
+    background-color: $color-blue;
+    color: $color-white;
+    font-weight: bold;
+    box-shadow: 5px 10px 16px #07ACE629;
+    border-radius: 40px;
+}
