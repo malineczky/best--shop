@@ -1,1 +1,0 @@
-{"mappings":"AAAA,QAAQ,IAAI;AACZ,QAAQ,IAAI;AACZ,QAAQ,IAAI","sources":["js/app.js"],"sourcesContent":["console.log(\"hej\");\r\nconsole.log(\"hejj\");\r\nconsole.log(\"a\");\r\n"],"names":[],"version":3,"file":"index.cea00a9b.js.map","sourceRoot":"/__parcel_source_root/"}
