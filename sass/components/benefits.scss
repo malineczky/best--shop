@@ -41,7 +41,12 @@
             width: 321px;
             height: 5px;
             background-color: $color-redish;
-            margin: 50px 0 0 0;
+            margin: 50px 26px 0 36px;
+        }
+
+        h2,
+        p {
+            margin: 36px;
         }
 
         @include tablet {
@@ -94,7 +99,7 @@
             position: absolute;
             transform: rotate(45deg);
             top: 56px;
-            left: 229px;
+            left: 171px;
 
             @include tablet {
                 width: 90px;
@@ -106,7 +111,7 @@
         }
     }
 
-    /* 2ND COLUMN OF BENEFITS */
+    /* 2ND RAW OF BENEFITS */
 
 
     &__single--iphone {
@@ -124,6 +129,7 @@
         margin-top: 29px;
         margin-bottom: 13px;
         margin-left: 70px;
+        padding-left: 40px;
         position: relative;
 
         @include tablet {
@@ -145,7 +151,7 @@
             background-color: $color-blue;
             position: absolute;
             top: 20px;
-            right: 106px;
+            right: 54px;
 
             @include tablet {
                 width: 131px;
@@ -157,11 +163,12 @@
 
     }
 
-    /* 3RD COLUMN OF BENEFITS */
+    /* 3RD RAW OF BENEFITS */
 
     &__double {
         display: flex;
         justify-content: space-between;
+
 
         @include tablet {
             flex-direction: column;
@@ -171,6 +178,7 @@
 
         &--col1 {
             max-width: 623px;
+
 
             @include tablet {
                 max-width: none;
