@@ -27,7 +27,7 @@ To run it locally, follow these steps:
 
 # Todo
 
--   adding an interactive calculator to the BestShop project
+-   adding an interactive calculator
 
 # Technology used
 
